@@ -1,0 +1,17 @@
+      ORG 0000H
+	  MOV R0,#50H
+	  MOV R3,#15
+	  MOV R1,#00H
+	  MOV @R0,#00H
+	  INC R0
+	  MOV R2,#01H
+	  MOV @R0,#01H
+LOOP: INC R0
+      MOV A,R1
+	  ADD A,R2
+	  MOV @R0,A
+	  MOV B,R2
+	  MOV R1,B
+	  MOV R2,A
+	  DJNZ R3,LOOP
+	  END
