@@ -1,0 +1,8 @@
+ORG 0000H
+MOV A,#09H
+CPL A
+CLR C
+ADD A,#01H
+MOV dptr,#2000H
+MOVX @dptr, A 
+END
