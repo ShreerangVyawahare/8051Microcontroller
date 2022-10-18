@@ -1,0 +1,8 @@
+       ORG 0000H
+       MOV R0,#05
+       MOV A,#01
+LOOP : MOV B,R0
+       MUL AB
+	   DEC R0
+       CJNE R0,#01,LOOP
+       END
