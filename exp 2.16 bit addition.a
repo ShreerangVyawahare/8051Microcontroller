@@ -1,0 +1,10 @@
+ORG 0000H
+CLR C     
+MOV A,#020H  
+ADD A,#003H  
+MOV R1,A  
+MOV A,#65H  
+ADDC A,#007H
+MOV R0,A  
+END
+	
